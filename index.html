@@ -14,132 +14,187 @@
 <body> <!-- Contiene el contenido visible de la página -->
     <header> <!-- encabezado  -->
         <nav> <!-- barra de navegacion --> <!--el menu  -->
-            <a href="logo"><img src="./img/american-world.png" class="logo" alt=""></a>
-            <ul> <!-- crear lista desordenadas --> <!-- dentro de ul    van elementos de listas se identifica li -->
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/ofrecemos.html">Ofrecemos</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-                <li><a href="./pages/nuestro equipo.html">Nuestro Equipo</a></li>
-            </ul>
-        </nav>
-    </header>
-    <h1>American world</h1> <!-- solo uno por documento -->
-    <p class="uno">Capacitación y Servicios Profesionales</p>
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand me-auto" href="#"></a>
 
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">logo</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link mx-lg-2 active" aria-current="page" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-lg-2" href="./pages/cursos.html">cursos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-lg-2" href="./pages/nosotros.html">nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-lg-2" href="./pages/nuestro equipo.html">nuestro equipo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-lg-2" href="./pages/contacto.html">contacto</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <a href="#" class="login-button">login</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </nav>
+        <section class="hero-section">
+        </section>
+    </header>
+    <section>
+        <h1>American world</h1> <!-- solo uno por documento -->
+        <p class="uno">Capacitación y Servicios Profesionales</p>
+    </section>
     <main> <!-- el contenido principal de la pagina -->
-        <section class="box1"> <!-- division del contenido por tematica  --> <!-- son etiquetas en bloque -->
-            <div>
-                <a href="" target="_blank">
-                    <p>¡Alista tus motores para un futuro increíble! </p>
-                </a>
+        <section class="container-fluid">
+
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/uno.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="azul">Excel</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/dos.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="carrusel">Normas ISO</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/tres.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="carrusel">Operador De Planta</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
         <div class="parrafos-cursos">
             <h2>Una amplia selección de cursos</h2>
             <p>Elige entre mas de 20 cursos de video en linea con nuevo contenido cada mes</p>
         </div>
+        <div class="row mx-5">
 
-            <div class="row mx-5">
-
-                <!-- tarjeta 1 -->
-                <div class="col ">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./img/planta.jpg" class="card-img-top" alt="imagen aasfj">
-                        <div class="card-body">
-                            <h1>Operador de planta</h1>
-                            <p class="card-text">
-curso de operador de planta te proporciona las bases sólidas para desempeñarte con éxito en un entorno industrial. Si te interesa este campo, te recomiendo investigar los diferentes cursos disponibles y elegir el que mejor se adapte a tus necesidades y objetivos profesionales.
-                            </p>
-                            <a href="#" class="btn btn-primary">Ver mas</a>
-                        </div>
+            <!-- tarjeta 1 -->
+            <div class="col ">
+                <div class="card" style="width: 16rem;">
+                    <img src="./img/planta.jpg" class="card-img-top" alt="imagen aasfj">
+                    <div class="card-body">
+                        <h1 class="tarje">Operador de planta</h1>
+                        <p class="card-text" style="font-size: 20px; text-align: center;">
+                            Curso de operador de planta te proporciona las bases sólidas para desempeñarte con éxito en
+                            un entorno industrial.
+                        </p>
+                        <a href="./pages/cursos.html" class="btn btn-primary">Ver mas</a>
                     </div>
                 </div>
-<!-- tarjeta 2 -->
- <div class="col">
-    <div class="card" style="width: 18rem;"> 
-        <img src="./img/curso norma iso.jpg" class="card-img-top" alt="fgjgdlsdsk ddsm">
-        <div class="card-body">
-            <h1>Normas iso</h1>
-            <p class="card-text"> 
-                Las Normas ISO son estándares internacionales que establecen los requisitos para productos, servicios, sistemas de gestión y procesos. Estas normas proporcionan un marco de referencia común para garantizar la calidad, seguridad y eficiencia en diversos sectores.
+            </div>
+            <!-- tarjeta 2 -->
+            <div class="col">
+                <div class="card" style="width: 16rem;">
+                    <img src="./img/curso norma iso.jpg" class="card-img-top" alt="fgjgdlsdsk ddsm">
+                    <div class="card-body">
+                        <h1 class="tarje">Normas ISO</h1>
+                        <p class="card-text" style="font-size: 20px; text-align: center;">
+                            Las Normas ISO son estándares internacionales que establecen los requisitos para productos,
+                            servicios y procesos.
 
-            </p>
-            <a href="#"class="btn btn-primary" >Ver mas</a>
-</div>
-</div>
-</div>
+                        </p>
+                        <a href="./pages/cursos.html" class="btn btn-primary">Ver mas</a>
+                    </div>
+                </div>
+            </div>
 
-<!-- tarjeta 3 -->
- <div class="col">
-    <div class="card" style="width: 18rem;" >
-        <img src="./img/diseño web.jpg" class="card-img-top" alt="imagen de la tarjeta">
-        <div class="card-body">
-            <h1>Diseño Web</h1>
-            <p class="card-text">
-                Un curso de diseño web te equipa con las habilidades y conocimientos necesarios para crear sitios web atractivos, funcionales y eficientes. Aprenderás a transformar ideas en realidades digitales, desde la concepción inicial hasta el lanzamiento de un sitio web completo.
-            </p>
-            <a href="#" class="btn btn-primary">Ver mas</a>
+            <!-- tarjeta 3 -->
+            <div class="col">
+                <div class="card" style="width: 16rem;">
+                    <img src="./img/diseño web.jpg" class="card-img-top" alt="imagen de la tarjeta">
+                    <div class="card-body">
+                        <h1 class="tarje">Diseño Web</h1>
+                        <p class="card-text" style="font-size: 20px; text-align: center;">
+                            Un curso de diseño web te equipa con las habilidades y conocimientos necesarios para crear
+                            sitios web atractivos y eficientes.
+                        </p>
+                        <a href="./pages/cursos.html" class="btn btn-primary">Ver mas</a>
 
+                    </div>
+                </div>
+
+            </div>
+            <!-- tarjeta 4 -->
+            <div class="col">
+                <div class="card" style="width: 16rem;">
+                    <img src="./img/normas itil.jpg" class="card-img-top" alt="isigjlfjsdf">
+                    <div class="card-body">
+                        <h1 class="tarje">Normas itil</h1>
+                        <p class="card-text" style="font-size: 20px; text-align: center;">
+                            ITIL (Information Technology Infrastructure Library) es un conjunto de mejores prácticas
+                            para la gestión de servicios de TI.
+                        </p>
+                        <a href="./pages/cursos.html" class="btn btn-primary">Ver mas</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-
- </div>
-<!-- tarjeta 4 -->
-<div class="col">
-    <div class="card" style="width: 18rem;">
-        <img src="./img/normas itil.jpg" class="card-img-top" alt="isigjlfjsdf">
-        <div class="card-body">
-            <h1>Normas itil</h1>
-            <p class="card-text">
-                ITIL (Information Technology Infrastructure Library) es un conjunto de mejores prácticas para la gestión de servicios 1  de TI. Proporciona un marco de trabajo estructurado que ayuda a las organizaciones a planificar, entregar y mejorar los servicios de TI, alineándolos con los objetivos del negocio. 
-            </p>
-            <a href="#" class="btn btn-primary">Ver mas</a>
-
-
-
-        </div>
-
-
-    </div>
-
-
-
-</div>
-
-
- </div>
-
-
         <section class="contenedor">
             <p>Certificate con nosotros</p>
             <img src="./img/certificado.png" alt="">
-
         </section>
-
         <div class="titulo3">
             <h2>Los estudiantes estan viendo</h2>
         </div>
         <section class="certificados">
             <div class="extra">
                 <img src="./img/curso compliance.jpg" alt="">
-                <h3>compliance</h3>
-
+                <h3>Compliance</h3>
             </div>
             <div class="extra">
                 <img src="./img/suministro.png" alt="">
                 <h3>Cadena de suministro</h3>
-
             </div>
             <div class="extra">
                 <img src="./img/curso okr.jpg" alt="">
                 <h3>¿Qué son los OKRs?</h3>
-
             </div>
             <div class="extra">
                 <img src="./img/kpis.jpg" alt="">
                 <h3>¿Qué es KPI?</h3>
-
             </div>
         </section>
         <section class="contenedor1">
@@ -147,41 +202,32 @@ curso de operador de planta te proporciona las bases sólidas para desempeñarte
                 E-Learning, On-line y presenciales para que puedas Elegir la modalidad que mas te guste </strong>
             <p class="formacion"></p>
             <img src="./img/online.jpg" alt="">
-
         </section>
-
-
         <div class="titulo4">
             <h2>Categorias principales</h2>
         </div>
-
         <section class="categoria">
             <div class="ahora">
                 <img src="./img/tecnologia.jpg" alt="">
-                <h3>Tecnologia</h3>
+                <a href="./pages/cursos.html">Tecnologia</a>
 
             </div>
 
             <div class="ahora">
                 <img src="./img/industria.jpg" alt="">
-                <h3>Insdutrias</h3>
+                <a href="./pages/cursos.html">Insdutrias</a>
 
             </div>
             <div class="ahora">
                 <img src="./img/Objetivos.jpg" alt="">
-                <h3>Objetivos y negocio</h3>
+                <a href="./pages/cursos.html">Objetivos y negocios</a>
             </div>
             <div class="ahora">
                 <img src="./img/Herramientas.jpg" alt="">
-                <h3>Herramientas</h3>
-
+                <a href="./pages/cursos.html">Herramientas</a>
             </div>
-
         </section>
-
-
     </main>
-
     <footer>
         <a href="https://www.instagram.com/americanworldca/" target="_blank">
             <img src="./img/instagram.webp" alt="">
